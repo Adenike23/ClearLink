@@ -1,10 +1,11 @@
 import React from 'react'
+import imgaeURL from '../../src/images/backgroundpattern-c0621009.png'
 
 const Navbar = () => {
   return (
     <>
-        <div className="navbar bg-base-100">
-  <div className="navbar-start">
+        <div className="navbar flex space-x-[12rem] mt-[2rem] justify-center bg-gray-200 rounded-full ">
+  <div className="">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -31,8 +32,8 @@ const Navbar = () => {
         <details>
           <summary>Products</summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            {/* <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li> */}
           </ul>
         </details>
       </li>
@@ -40,8 +41,8 @@ const Navbar = () => {
         <details>
           <summary>Solutions</summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            {/* <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li> */}
           </ul>
         </details>
       </li>
@@ -49,15 +50,15 @@ const Navbar = () => {
         <details>
           <summary>Resources</summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            {/* <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li> */}
           </ul>
         </details>
       </li>
       <li><a>Pricing</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="">
     <a className="btn mx-2 rounded-full">Talk to sales</a>
     <a className="btn btn-primary rounded-full">Sign up for free</a>
   </div>
