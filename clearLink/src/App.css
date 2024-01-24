@@ -4,8 +4,22 @@
   box-sizing: border-box;
 }
 .icons{
-  /* box-shadow: 0 0 2px 2px rgba(0, 0, 0.5); */
+  position: relative;
+  width: 45px;
+    height: 45px;
+    margin: 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2f74c0;
+    color: white;
+    box-shadow: 0 0 5px rgb(107, 104, 104);
+}
+.arrow{
+  box-shadow: 0 0 5px rgb(107, 104, 104);
 }
 .body{
   background-image: url('https://ivy-clearlink.netlify.app/assets/backgroundpattern-c0621009.png');
+}
+.box{
+  box-shadow: 0 0 5px rgb(107, 104, 104);
 }

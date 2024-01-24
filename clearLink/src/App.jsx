@@ -3,7 +3,7 @@ import './App.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/home/Home'
 import Navbar from './components/Navbar'
-import Product from './pages/product/Product'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path={'/'} element={<Home/>}/>
-        <Route path={'/product'} element={<Product/>}/>
       </Routes>
+      <Footer/>
     </Router>
     </>
   )

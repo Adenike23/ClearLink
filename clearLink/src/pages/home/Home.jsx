@@ -6,9 +6,21 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaRegFaceSmile } from "react-icons/fa6";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import { IoMdCheckmark } from "react-icons/io";
-// import Product from '../product/Product';
+import { LuCalendar } from "react-icons/lu";
+import { CgScreen } from "react-icons/cg";
+import image from '../../../src/images/people.png'
+import image2 from '../../../src/images/arrow.png'
+import image3 from '../../../src/images/Avatar-group.png'
+import image4 from '../../../src/images/image4.png'
+import image5 from '../../../src/images/image5.png'
+import image6 from '../../../src/images/image6.png'
+import image7 from '../../../src/images/image7.png'
+import image8 from '../../../src/images/image8.png'
+import image9 from '../../../src/images/image9.png'
+import image10 from '../../../src/images/Avatar-lady.png'
+import image11 from '../../../src/images/Contents.png'
+import image12 from '../../../src/images/cta.png'
 import imgaeURL from "../../images/backgroundpattern-c0621009.png";
-// className="bg-url" style={{ backgroundImage: `url(${imgaeURL})` }}
 const Home = () => {
   return (
     <div className="">
@@ -74,7 +86,7 @@ const Home = () => {
           </div>
           <div className="flex gap-5">
             <img
-              src="https://ivy-clearlink.netlify.app/assets/Avatar%20group-55f85fdc.png"
+              src={image3}
               alt="avatargroup"
               srcset=""
             ></img>
@@ -183,60 +195,62 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-blue-100 w-[40%] p-[2rem] rounded-xl">
+        <div className="box bg-blue-50 w-[40%] p-[2rem] rounded-xl">
           <div className="grid grid-cols-3 gap-3 mx-auto w-[90%]">
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%2021-2662458b.png"
+              src={image4}
               className="bg-orange-300 rounded-xl h-[100%]"
             />
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%20100-86ed7cf5.png"
+              src={image5}
               className="bg-purple-300 rounded-xl h-[100%]"
             />
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%208-411c6182.png"
+              src={image6}
               className="bg-green-300 rounded-xl h-[100%]"
             />
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%2072-75033027.png"
+              src={image7}
               className="bg-blue-300 rounded-xl h-[100%]"
             />
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%20108-0899e7aa.png"
+              src={image8}
               className="bg-yellow-300 rounded-xl h-[100%]"
             />
             <img
-              src="https://ivy-clearlink.netlify.app/assets/image%20103-3bf8d277.png"
+              src={image9}
               className="bg-pink-300 rounded-xl h-[100%]"
             />
           </div>
 
-          <div className="flex justify-around pt-2">
-            <span className="text-blue-500 text-2xl bg-white p-2 rounded-full">
+          <div className="flex justify-center gap-5 pt-2">
+            <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
               <MdOutlineKeyboardVoice />
             </span>
-            <span className="text-blue-500 text-2xl bg-white p-2 rounded-full">
+            <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
               <FiVideo />
             </span>
-            <span className="text-blue-500 text-2xl bg-white p-2 rounded-full">
+            <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
+              <CgScreen />
+            </span>
+            <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
               <FaRegFaceSmile />
             </span>
             <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
               <AiOutlineMessage />
             </span>
-            <span className="text-blue-500 text-2xl bg-white p-2 rounded-full">
+            <span className="text-blue-500 text-xl bg-white p-2 rounded-full">
               <IoSettingsOutline />
             </span>
           </div>
         </div>
-        {/* <img src="https://ivy-clearlink.netlify.app/assets/cta-243a57e1.png" alt="" /> */}
       </main>
 
       <section>
-        <p className="text-slate-500 text-center my-5">
+        <p className="text-slate-500 text-center my-5 mt-[4rem]">
           Join 1,500+ companies already video conferencing the ClearLink way
         </p>
-        <div className="flex justify-around">
+        <div className="flex justify-around mt-12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="142"
@@ -512,20 +526,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex justify-around mt-[10rem]">
+      <section className="relative flex justify-around items-end mt-[10rem]">
         <div className="w-[40%]">
           <p className="text-blue-600 text-sm font-semibold p-3">
             The ClearLink advantage
           </p>
           <h1 className="font-bold text-4xl">Why choose ClearLink?</h1>
-          <p className="leading-loose text-gray-500 text-xl">
+          <p className="leading-loose text-gray-500 text-lg my-6">
             In a world where connection is everything, ClearLink takes the lead.
             Our cutting-edge video conferencing app offers:
           </p>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <span className="icons text-blue-500 text-2xl bg-white  p-2 rounded-full">
-                <MdOutlineKeyboardVoice />
+              <span >
+                <FiVideo className="icons text-blue-500 bg-white p-2 rounded-full"/>
               </span>
               <h1 className="font-semibold text-lg">Crystal-clear HD video</h1>
               <p className="text-sm pt-3 text-gray-500">
@@ -534,47 +548,42 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <span className="icons text-blue-500 text-2xl bg-white  p-2 rounded-full">
-                <MdOutlineKeyboardVoice />
+              <span >
+              <svg className="icons text-blue-500 text-4xl bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 24 25" fill="none"><path d="M3 10.5L3 14.5M7.5 6.5L7.5 18.5M12 3.5V21.5M16.5 6.5V18.5M21 10.5V14.5" stroke="#175CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </span>
               <h1 className="font-semibold text-lg">Noise-canceling audio</h1>
               <p className="text-sm pt-3 text-gray-500">
-                Say goodbye to distractions with our advanced audio tech for
-                crisp, interruption-free conversations.
+              Say goodbye to distractions with our advanced audio tech for crisp, interruption-free conversations.
               </p>
             </div>
             <div>
-              <span className="icons text-blue-500 text-2xl bg-white p-2 rounded-full">
-                <MdOutlineKeyboardVoice />
+              <span >
+                <LuCalendar className="icons text-blue-500 text-4xl bg-white p-2 rounded-full"/>
               </span>
               <h1 className="font-semibold text-lg">Scheduling made easy</h1>
               <p className="text-sm pt-3 text-gray-500">
-                Streamline your agenda with ClearLink's intuitive scheduling.
-                Set up meetings, send invitations, and receive reminders in one
-                place.
+              Streamline your agenda with ClearLink's intuitive scheduling. Set up meetings, send invitations, and receive reminders in one place.
               </p>
             </div>
             <div>
-              <span className="icons text-blue-500 text-2xl bg-white  p-2 rounded-full">
-                <MdOutlineKeyboardVoice />
-              </span>
+              <svg className="icons text-blue-500 text-4xl bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 24 25" fill="none"><path d="M7 10.5V8.5C7 5.73858 9.23858 3.5 12 3.5C13.6358 3.5 15.0882 4.28555 16.0004 5.5M12 14.5V16.5M19 15.5C19 19.366 15.866 22.5 12 22.5C8.13401 22.5 5 19.366 5 15.5C5 11.634 8.13401 8.5 12 8.5C15.866 8.5 19 11.634 19 15.5Z" stroke="#175CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               <h1 className="font-semibold text-lg">Bank-grade security</h1>
               <p className="text-sm pt-3 text-gray-500">
-                Your privacy is our priority with bank-grade security protocols
-                safeguarding your meetings and data from unwanted intruders.
+              Your privacy is our priority with bank-grade security protocols safeguarding your meetings and data from unwanted intruders.
               </p>
             </div>
           </div>
         </div>
-        <img
-          src="https://ivy-clearlink.netlify.app/assets/Rectangle%201-c6eb5dde.png"
+       <div>
+       <img
+          src={image}
           alt=""
-          className="relative h-[30%]"
         />
+       </div>
         <img
-          src="https://ivy-clearlink.netlify.app/assets/Hand-drawn%20arrow-48b92dd2.png"
+          src={image2}
           alt=""
-          className="absolute top-[95%] right-[10%]"
+          className="absolute right-[20rem] -top-14"
         />
       </section>
 
@@ -748,7 +757,7 @@ const Home = () => {
           </h1>
           <div className="flex mt-5 gap-5">
             <img
-              src="https://ivy-clearlink.netlify.app/assets/Avatar-9ab5d9ab.png"
+              src={image10}
               alt=""
             />
             <div>
@@ -758,12 +767,12 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="https://ivy-clearlink.netlify.app/assets/Contents-bccdc6ff.png"
+          src={image11}
           alt=""
         />
-        <div className="absolute bottom-0 -translate-x-[50%]">
-          <IoMdArrowBack />
-          <IoMdArrowForward />
+        <div className="absolute bottom-12 text-blue-500 -translate-x-[50%]">
+          <IoMdArrowBack className="arrow absolute right-[2rem] text-4xl bg-white p-1 rounded-full"/>
+          <IoMdArrowForward className="arrow relative left-[2rem] text-4xl bg-white p-1 rounded-full"/>
         </div>
       </section>
 
@@ -779,58 +788,63 @@ const Home = () => {
         </div>
 
         <div className="w-[50%]">
-          <div className="collapse collapse-plus border-b-2 border-solid border-black">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div className="collapse collapse-plus border-b border-solid border-black">
+          <div className="collapse collapse-plus">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            How many participants can join a ClearLink video conference?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-base-200">
+          <hr className="border border-black"/>
+          <div className="collapse collapse-plus">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Can I use ClearLink on multiple devices?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-base-200">
+          <hr className="border border-black"/>
+          <div className="collapse collapse-plus">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Is ClearLink compatible with other video conferencing platforms?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-base-200">
+          <hr className="border border-black"/>
+          <div className="collapse collapse-plus">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            How does ClearLink ensure the security of my video conferences?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-base-200">
+          <hr className="border border-black"/>
+          <div className="collapse collapse-plus">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Do I need to download any software to use ClearLink?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
+            </div>
+          </div>
+          <hr className="border border-black"/>
+          <div className="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+            What kind of customer support does ClearLink provide?
+            </div>
+            <div className="collapse-content">
+              <p className="text-sm">ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.</p>
             </div>
           </div>
         </div>
@@ -840,19 +854,18 @@ const Home = () => {
         <div className="w-[38%] mt-5 ms-10">
             <h1 className="font-semibold text-5xl">Ready to clear the path to perfect communication?</h1>
             <ul className="my-[3rem]">
-                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border rounded-full p-1 border-primary"><IoMdCheckmark/></span>30 days free trial</li>
-                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border rounded-full p-1 border-primary"><IoMdCheckmark/></span>Cancel at any time</li>
-                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border rounded-full p-1 border-primary"><IoMdCheckmark/></span>Access to all features</li>
-                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border rounded-full p-1 border-primary"><IoMdCheckmark/></span>Peronalized onboarding</li>
+                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border-2 rounded-full p-1 border-primary"><IoMdCheckmark/></span>30 days free trial</li>
+                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border-2 rounded-full p-1 border-primary"><IoMdCheckmark/></span>Cancel at any time</li>
+                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border-2 rounded-full p-1 border-primary"><IoMdCheckmark/></span>Access to all features</li>
+                <li className="flex gap-3 items-center mb-4 text-lg"><span className="text-primary border-2 rounded-full p-1 border-primary"><IoMdCheckmark/></span>Peronalized onboarding</li>
             </ul>
             <div className="">
                 <a className="btn border-primary bg-white border-2 w-[30%] mx-2 rounded-full">Talk to sales</a>
                 <a className="btn btn-primary rounded-full w-[30%]">Sign up for free</a>
             </div>
         </div>
-        <img src="https://ivy-clearlink.netlify.app/assets/cta-243a57e1.png" alt=""  className="w-[48%]"/>
+        <img src={image12} alt=""  className="w-[48%]"/>
       </section>
-      {/* <Product/> */}
     </div>
   );
 };
